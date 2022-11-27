@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+}
+body #calculator {
+  background: rgb(73, 54, 80);
+  background: linear-gradient(145deg, rgb(81, 62, 88) 20%, rgb(49, 40, 61) 94%);
+  position: relative;
+  padding: 8px;
+  border-radius: 4px;
+}
+body #calculator #display-section {
+  backdrop-filter: blur(7px) saturate(100%);
+  -webkit-backdrop-filter: blur(7px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(16, 16, 16, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 4px;
+  margin: 0.2rem 0 0.5rem 0;
+}
+body #calculator #display-section #display {
+  text-align: end;
+  font-size: 2rem;
+}
+body #calculator #display-section #display #minified-display {
+  opacity: 60%;
+  font-size: 65%;
+  margin: 4px 0;
+}
+body #calculator #display-section #display #mainDisplay {
+  text-align: end;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+body #calculator #buttons {
+  backdrop-filter: blur(7px) saturate(100%);
+  -webkit-backdrop-filter: blur(7px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(16, 16, 16, 0.25);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  padding: 5px;
+}
+body #calculator #buttons button {
+  backdrop-filter: blur(7px) saturate(100%);
+  -webkit-backdrop-filter: blur(7px) saturate(100%);
+  background-color: rgba(59, 46, 69, 0.75);
+  border-radius: 2px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+body #calculator #buttons #clear {
+  background-color: rgb(173, 45, 45);
+}
+body #calculator #buttons #multiply, body #calculator #buttons #divide, body #calculator #buttons #add, body #calculator #buttons #subtract {
+  background-color: rgb(59, 46, 69);
+}
+body #calculator #buttons #placeholder-left, body #calculator #buttons #placeholder-right {
+  cursor: default;
+  outline: none;
+}
+body #calculator #buttons #placeholder-left:hover, body #calculator #buttons #placeholder-right:hover {
+  opacity: 100%;
+}
+
+button:hover {
+  opacity: 85%;
+}/*# sourceMappingURL=style.css.map */
